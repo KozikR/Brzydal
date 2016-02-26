@@ -24,12 +24,14 @@ int main(int argc, char *argv[]) {
   // Not checking return values of write() and read(). This must be done
   // in a real-life program to ensure reliability.
   
-  unsigned char data_w[] = "Ala ma kota";
+  unsigned char data_w[] = {"abcdABCD"};
   unsigned char data_r[20];
 
   write(fdw, (void *) data_w, strlen(data_w)+1);
   read(fdr, (void *) data_r, strlen(data_w)+1);
-
+    
+  data_r[19] = 0;
+  
   printf("Send: %s; Receive %s\n", data_w, data_r);
 
   close(fdr);
