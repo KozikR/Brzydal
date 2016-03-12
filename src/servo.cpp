@@ -46,7 +46,7 @@ servo::~servo(){
     close(this->fdw);
 }
 
-servo::send_data(){
+void servo::send_data(){
     write(fdw, (void *) this->position, 3);
 }
 

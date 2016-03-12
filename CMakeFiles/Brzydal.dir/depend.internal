@@ -3,6 +3,7 @@
 
 CMakeFiles/Brzydal.dir/src/face.cpp.o
  /root/Brzydal/src/face.cpp
+ inc/face.h
 CMakeFiles/Brzydal.dir/src/main.cpp.o
  /root/Brzydal/src/main.cpp
  inc/face.h

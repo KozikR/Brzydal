@@ -1,8 +1,9 @@
 #ifndef FACE_H
 #define FACE_H
 
-#inlcude <string>
+#include <string>
 #include <opencv2/core/core.hpp>
+#include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <iostream>
 
