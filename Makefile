@@ -180,6 +180,30 @@ src/servo.cpp.s:
 	$(MAKE) -f CMakeFiles/Brzydal.dir/build.make CMakeFiles/Brzydal.dir/src/servo.cpp.s
 .PHONY : src/servo.cpp.s
 
+src/simpleFace.o: src/simpleFace.cpp.o
+.PHONY : src/simpleFace.o
+
+# target to build an object file
+src/simpleFace.cpp.o:
+	$(MAKE) -f CMakeFiles/Brzydal.dir/build.make CMakeFiles/Brzydal.dir/src/simpleFace.cpp.o
+.PHONY : src/simpleFace.cpp.o
+
+src/simpleFace.i: src/simpleFace.cpp.i
+.PHONY : src/simpleFace.i
+
+# target to preprocess a source file
+src/simpleFace.cpp.i:
+	$(MAKE) -f CMakeFiles/Brzydal.dir/build.make CMakeFiles/Brzydal.dir/src/simpleFace.cpp.i
+.PHONY : src/simpleFace.cpp.i
+
+src/simpleFace.s: src/simpleFace.cpp.s
+.PHONY : src/simpleFace.s
+
+# target to generate assembly for a file
+src/simpleFace.cpp.s:
+	$(MAKE) -f CMakeFiles/Brzydal.dir/build.make CMakeFiles/Brzydal.dir/src/simpleFace.cpp.s
+.PHONY : src/simpleFace.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -198,6 +222,9 @@ help:
 	@echo "... src/servo.o"
 	@echo "... src/servo.i"
 	@echo "... src/servo.s"
+	@echo "... src/simpleFace.o"
+	@echo "... src/simpleFace.i"
+	@echo "... src/simpleFace.s"
 .PHONY : help
 
 
