@@ -1,4 +1,4 @@
-#include face.h
+#include "face.h"
 #include <iostream>
 
 const string Face::windowName = "BRZYDAL";
