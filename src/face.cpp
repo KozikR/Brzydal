@@ -13,12 +13,6 @@ image(Face::width, Face::height, CV_8UC3, Scalar(255,0,0))
  //   setWindowProperty(windowName, WND_PROP_FULLSCREEN, WINDOW_FULLSCREEN);
     resizeWindow(windowName, Face::width, Face::height);
     moveWindow(windowName, 20,20);
-
-    circle(image, Point(50, 50), 20, Scalar(0,0,255));
-    circle(image, Point(750, 50), 20, Scalar(0,255,0));
-    circle(image, Point(50, 430), 20, Scalar(0,255,255));
-    circle(image, Point(750, 430), 20, Scalar(255,0,255));
-
 }
 
 Face::~Face(){
