@@ -27,7 +27,7 @@ public:
 private:
     int fdw;
     float a,b;    // calibration    
-    unsigned char position[2];
+    unsigned char position[3];
     
     void send_data(void);
 };

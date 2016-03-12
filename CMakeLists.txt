@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 2.8)
+project( Brzydal )
+find_package( OpenCV REQUIRED )
+include_directories(inc)
+file(GLOB SOURCES "src/*.cpp")
+add_executable(testStudent ${SOURCES})
+target_link_libraries( Brzydal ${OpenCV_LIBS} )

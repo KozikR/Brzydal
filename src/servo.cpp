@@ -23,6 +23,7 @@ servo::servo(){
     // Initial position
     this->position[0] = 0;
     this->position[1] = 0;
+    this->position[2] = 0;
     
     // calibration
     a = 1.;
@@ -46,6 +47,6 @@ servo::~servo(){
 }
 
 servo::send_data(){
-    write(fdw, (void *) this->position, 2);
+    write(fdw, (void *) this->position, 3);
 }
 
