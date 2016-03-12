@@ -6,7 +6,12 @@ CMakeFiles/Brzydal.dir/src/face.cpp.o: inc/face.h
 
 CMakeFiles/Brzydal.dir/src/main.cpp.o: src/main.cpp
 CMakeFiles/Brzydal.dir/src/main.cpp.o: inc/face.h
+CMakeFiles/Brzydal.dir/src/main.cpp.o: inc/simpleFace.h
 
 CMakeFiles/Brzydal.dir/src/servo.cpp.o: src/servo.cpp
 CMakeFiles/Brzydal.dir/src/servo.cpp.o: inc/servo.h
+
+CMakeFiles/Brzydal.dir/src/simpleFace.cpp.o: src/simpleFace.cpp
+CMakeFiles/Brzydal.dir/src/simpleFace.cpp.o: inc/face.h
+CMakeFiles/Brzydal.dir/src/simpleFace.cpp.o: inc/simpleFace.h
 
