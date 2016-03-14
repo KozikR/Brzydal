@@ -2,8 +2,8 @@
 #include <iostream>
 
 const string Face::windowName = "BRZYDAL";
-const int Face::width = 480;
-const int Face::height = 800;
+const int Face::width = 768;//480;
+const int Face::height = 1024;//800;
 
 Face::Face()
 :
