@@ -9,8 +9,8 @@ Face::Face()
 :
 image(Face::width, Face::height, CV_8UC3, Scalar(255,0,0))
 {
-    namedWindow(windowName, WINDOW_AUTOSIZE);  // prepare window
- //   setWindowProperty(windowName, WND_PROP_FULLSCREEN, WINDOW_FULLSCREEN);
+    namedWindow(windowName, WINDOW_NORMAL);  // prepare window
+   setWindowProperty(windowName, WND_PROP_FULLSCREEN, WINDOW_FULLSCREEN);
 //    resizeWindow(windowName, Face::width, Face::height);
     moveWindow(windowName, 20,20);
 }
