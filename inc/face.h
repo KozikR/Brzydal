@@ -24,9 +24,12 @@ class Face{
         
         static const int width;
         static const int height;  
-    
+        static const int width_display;
+        static const int height_display;
+             
     protected:
         Mat image;
+        Mat image_ROI;  // Region of interest
         static const string windowName;
             
 };
