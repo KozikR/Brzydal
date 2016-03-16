@@ -1,5 +1,5 @@
-#ifndef SIMPLEFACE_H
-#define SIMPLEFACE_H
+#ifndef IMAGEFACE_H
+#define IMAGEFACE_H
 
 #include "face.h"
 

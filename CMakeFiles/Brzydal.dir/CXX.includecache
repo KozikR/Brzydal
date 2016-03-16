@@ -6,11 +6,9 @@
 
 #IncludeRegexTransform: 
 
-/root/Brzydal/src/face.cpp
-face.h
-/root/Brzydal/src/face.h
-iostream
--
+/root/Brzydal/src/imageFace.cpp
+imageFace.h
+/root/Brzydal/src/imageFace.h
 
 inc/face.h
 string
@@ -23,4 +21,8 @@ opencv2/highgui/highgui.hpp
 -
 iostream
 -
+
+inc/imageFace.h
+face.h
+inc/face.h
 

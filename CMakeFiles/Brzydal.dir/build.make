@@ -138,12 +138,36 @@ CMakeFiles/Brzydal.dir/src/servo.cpp.o.provides: CMakeFiles/Brzydal.dir/src/serv
 
 CMakeFiles/Brzydal.dir/src/servo.cpp.o.provides.build: CMakeFiles/Brzydal.dir/src/servo.cpp.o
 
+CMakeFiles/Brzydal.dir/src/imageFace.cpp.o: CMakeFiles/Brzydal.dir/flags.make
+CMakeFiles/Brzydal.dir/src/imageFace.cpp.o: src/imageFace.cpp
+	$(CMAKE_COMMAND) -E cmake_progress_report /root/Brzydal/CMakeFiles $(CMAKE_PROGRESS_5)
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Building CXX object CMakeFiles/Brzydal.dir/src/imageFace.cpp.o"
+	/usr/bin/c++   $(CXX_DEFINES) $(CXX_FLAGS) -o CMakeFiles/Brzydal.dir/src/imageFace.cpp.o -c /root/Brzydal/src/imageFace.cpp
+
+CMakeFiles/Brzydal.dir/src/imageFace.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Brzydal.dir/src/imageFace.cpp.i"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -E /root/Brzydal/src/imageFace.cpp > CMakeFiles/Brzydal.dir/src/imageFace.cpp.i
+
+CMakeFiles/Brzydal.dir/src/imageFace.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Brzydal.dir/src/imageFace.cpp.s"
+	/usr/bin/c++  $(CXX_DEFINES) $(CXX_FLAGS) -S /root/Brzydal/src/imageFace.cpp -o CMakeFiles/Brzydal.dir/src/imageFace.cpp.s
+
+CMakeFiles/Brzydal.dir/src/imageFace.cpp.o.requires:
+.PHONY : CMakeFiles/Brzydal.dir/src/imageFace.cpp.o.requires
+
+CMakeFiles/Brzydal.dir/src/imageFace.cpp.o.provides: CMakeFiles/Brzydal.dir/src/imageFace.cpp.o.requires
+	$(MAKE) -f CMakeFiles/Brzydal.dir/build.make CMakeFiles/Brzydal.dir/src/imageFace.cpp.o.provides.build
+.PHONY : CMakeFiles/Brzydal.dir/src/imageFace.cpp.o.provides
+
+CMakeFiles/Brzydal.dir/src/imageFace.cpp.o.provides.build: CMakeFiles/Brzydal.dir/src/imageFace.cpp.o
+
 # Object files for target Brzydal
 Brzydal_OBJECTS = \
 "CMakeFiles/Brzydal.dir/src/simpleFace.cpp.o" \
 "CMakeFiles/Brzydal.dir/src/face.cpp.o" \
 "CMakeFiles/Brzydal.dir/src/main.cpp.o" \
-"CMakeFiles/Brzydal.dir/src/servo.cpp.o"
+"CMakeFiles/Brzydal.dir/src/servo.cpp.o" \
+"CMakeFiles/Brzydal.dir/src/imageFace.cpp.o"
 
 # External object files for target Brzydal
 Brzydal_EXTERNAL_OBJECTS =
@@ -152,6 +176,7 @@ Brzydal: CMakeFiles/Brzydal.dir/src/simpleFace.cpp.o
 Brzydal: CMakeFiles/Brzydal.dir/src/face.cpp.o
 Brzydal: CMakeFiles/Brzydal.dir/src/main.cpp.o
 Brzydal: CMakeFiles/Brzydal.dir/src/servo.cpp.o
+Brzydal: CMakeFiles/Brzydal.dir/src/imageFace.cpp.o
 Brzydal: /usr/local/lib/libopencv_videostab.so.3.1.0
 Brzydal: /usr/local/lib/libopencv_videoio.so.3.1.0
 Brzydal: /usr/local/lib/libopencv_video.so.3.1.0
@@ -190,6 +215,7 @@ CMakeFiles/Brzydal.dir/requires: CMakeFiles/Brzydal.dir/src/simpleFace.cpp.o.req
 CMakeFiles/Brzydal.dir/requires: CMakeFiles/Brzydal.dir/src/face.cpp.o.requires
 CMakeFiles/Brzydal.dir/requires: CMakeFiles/Brzydal.dir/src/main.cpp.o.requires
 CMakeFiles/Brzydal.dir/requires: CMakeFiles/Brzydal.dir/src/servo.cpp.o.requires
+CMakeFiles/Brzydal.dir/requires: CMakeFiles/Brzydal.dir/src/imageFace.cpp.o.requires
 .PHONY : CMakeFiles/Brzydal.dir/requires
 
 CMakeFiles/Brzydal.dir/clean:

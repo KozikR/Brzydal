@@ -132,6 +132,30 @@ src/face.cpp.s:
 	$(MAKE) -f CMakeFiles/Brzydal.dir/build.make CMakeFiles/Brzydal.dir/src/face.cpp.s
 .PHONY : src/face.cpp.s
 
+src/imageFace.o: src/imageFace.cpp.o
+.PHONY : src/imageFace.o
+
+# target to build an object file
+src/imageFace.cpp.o:
+	$(MAKE) -f CMakeFiles/Brzydal.dir/build.make CMakeFiles/Brzydal.dir/src/imageFace.cpp.o
+.PHONY : src/imageFace.cpp.o
+
+src/imageFace.i: src/imageFace.cpp.i
+.PHONY : src/imageFace.i
+
+# target to preprocess a source file
+src/imageFace.cpp.i:
+	$(MAKE) -f CMakeFiles/Brzydal.dir/build.make CMakeFiles/Brzydal.dir/src/imageFace.cpp.i
+.PHONY : src/imageFace.cpp.i
+
+src/imageFace.s: src/imageFace.cpp.s
+.PHONY : src/imageFace.s
+
+# target to generate assembly for a file
+src/imageFace.cpp.s:
+	$(MAKE) -f CMakeFiles/Brzydal.dir/build.make CMakeFiles/Brzydal.dir/src/imageFace.cpp.s
+.PHONY : src/imageFace.cpp.s
+
 src/main.o: src/main.cpp.o
 .PHONY : src/main.o
 
@@ -216,6 +240,9 @@ help:
 	@echo "... src/face.o"
 	@echo "... src/face.i"
 	@echo "... src/face.s"
+	@echo "... src/imageFace.o"
+	@echo "... src/imageFace.i"
+	@echo "... src/imageFace.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"

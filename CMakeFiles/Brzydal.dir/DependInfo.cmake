@@ -5,6 +5,7 @@ SET(CMAKE_DEPENDS_LANGUAGES
 # The set of files for implicit dependencies of each language:
 SET(CMAKE_DEPENDS_CHECK_CXX
   "/root/Brzydal/src/face.cpp" "/root/Brzydal/CMakeFiles/Brzydal.dir/src/face.cpp.o"
+  "/root/Brzydal/src/imageFace.cpp" "/root/Brzydal/CMakeFiles/Brzydal.dir/src/imageFace.cpp.o"
   "/root/Brzydal/src/main.cpp" "/root/Brzydal/CMakeFiles/Brzydal.dir/src/main.cpp.o"
   "/root/Brzydal/src/servo.cpp" "/root/Brzydal/CMakeFiles/Brzydal.dir/src/servo.cpp.o"
   "/root/Brzydal/src/simpleFace.cpp" "/root/Brzydal/CMakeFiles/Brzydal.dir/src/simpleFace.cpp.o"

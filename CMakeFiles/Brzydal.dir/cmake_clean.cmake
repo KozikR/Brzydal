@@ -3,6 +3,7 @@ FILE(REMOVE_RECURSE
   "CMakeFiles/Brzydal.dir/src/face.cpp.o"
   "CMakeFiles/Brzydal.dir/src/main.cpp.o"
   "CMakeFiles/Brzydal.dir/src/servo.cpp.o"
+  "CMakeFiles/Brzydal.dir/src/imageFace.cpp.o"
   "Brzydal.pdb"
   "Brzydal"
 )
