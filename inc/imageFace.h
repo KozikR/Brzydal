@@ -6,6 +6,7 @@
 class ImageFace : public Face{
 public:
     ImageFace();
+    ImageFace(int type);
 };
 
 #endif

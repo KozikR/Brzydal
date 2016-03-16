@@ -32,6 +32,9 @@ if( argv[1][0] == '1' ){
   ImageFace face1;
   face1.display(); 
 	
+} else if(argv[1][0] = '3'){
+  ImageFace face2(2);
+  face2.display();
 }
 
     waitKey(0);

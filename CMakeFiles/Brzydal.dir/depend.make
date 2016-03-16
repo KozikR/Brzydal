@@ -10,6 +10,7 @@ CMakeFiles/Brzydal.dir/src/imageFace.cpp.o: inc/imageFace.h
 
 CMakeFiles/Brzydal.dir/src/main.cpp.o: src/main.cpp
 CMakeFiles/Brzydal.dir/src/main.cpp.o: inc/face.h
+CMakeFiles/Brzydal.dir/src/main.cpp.o: inc/imageFace.h
 CMakeFiles/Brzydal.dir/src/main.cpp.o: inc/simpleFace.h
 
 CMakeFiles/Brzydal.dir/src/servo.cpp.o: src/servo.cpp

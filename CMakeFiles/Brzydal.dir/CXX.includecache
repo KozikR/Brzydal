@@ -6,9 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/root/Brzydal/src/imageFace.cpp
+/root/Brzydal/src/main.cpp
+iostream
+-
+string
+-
+face.h
+-
+simpleFace.h
+-
 imageFace.h
-/root/Brzydal/src/imageFace.h
+-
+unistd.h
+-
 
 inc/face.h
 string
@@ -23,6 +33,10 @@ iostream
 -
 
 inc/imageFace.h
+face.h
+inc/face.h
+
+inc/simpleFace.h
 face.h
 inc/face.h
 
