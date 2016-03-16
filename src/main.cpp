@@ -4,6 +4,7 @@
 #include <simpleFace.h>
 #include <imageFace.h>
 #include <unistd.h>
+#include <halFace.h>
 
 int main(int argc, char** argv){
 
@@ -32,9 +33,18 @@ if( argv[1][0] == '1' ){
   ImageFace face1;
   face1.display(); 
 	
-} else if(argv[1][0] = '3'){
+} else if(argv[1][0] == '3'){
   ImageFace face2(2);
   face2.display();
+} else if(argv[1][0] == '4'){
+  HalFace halFace;
+  
+  for(int phi = 0; phi < 720; phi++){
+    float p = -10*phi*3.14/360;
+    halFace.draw(p);	
+    halFace.display();
+    waitKey(50);
+ }
 }
 
     waitKey(0);
