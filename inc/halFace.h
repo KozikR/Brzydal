@@ -8,16 +8,18 @@ public:
     HalFace();
     
     void draw(float p);
+    void draw_static();
 
 protected:
-   float A;
-   float R;
-   float a;
-   float x0;
-   float y0;
+    float A;	
+    float R; // promień zewnętrzny
+    float r; // promień wewnętrzny
+    float a;
+    float x0;
+    float y0;
 	
-   float w;
-   float phi;
+    float w;
+    float phi;
 };
 
 #endif
