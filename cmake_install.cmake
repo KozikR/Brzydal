@@ -1,4 +1,4 @@
-# Install script for directory: /root/Brzydal
+# Install script for directory: /home/jakub/Pulpit/Brzydal/Brzydal
 
 # Set the install prefix
 IF(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -38,7 +38,7 @@ ELSE(CMAKE_INSTALL_COMPONENT)
   SET(CMAKE_INSTALL_MANIFEST "install_manifest.txt")
 ENDIF(CMAKE_INSTALL_COMPONENT)
 
-FILE(WRITE "/root/Brzydal/${CMAKE_INSTALL_MANIFEST}" "")
+FILE(WRITE "/home/jakub/Pulpit/Brzydal/Brzydal/${CMAKE_INSTALL_MANIFEST}" "")
 FOREACH(file ${CMAKE_INSTALL_MANIFEST_FILES})
-  FILE(APPEND "/root/Brzydal/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
+  FILE(APPEND "/home/jakub/Pulpit/Brzydal/Brzydal/${CMAKE_INSTALL_MANIFEST}" "${file}\n")
 ENDFOREACH(file)

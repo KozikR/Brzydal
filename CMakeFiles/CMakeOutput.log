@@ -1,6 +1,6 @@
-The system is: Linux - 3.12.0-xillinux-1.3 - armv7l
+The system is: Linux - 3.13.0-77-generic - x86_64
 Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /usr/bin/gcc 
+Compiler: /usr/bin/cc 
 Build flags: 
 Id flags: 
 
@@ -10,7 +10,7 @@ The output was:
 
 Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
 
-The C compiler identification is GNU, found in "/root/Brzydal/CMakeFiles/CompilerIdC/a.out"
+The C compiler identification is GNU, found in "/home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/2.8.12.2/CompilerIdC/a.out"
 
 Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
 Compiler: /usr/bin/c++ 
@@ -23,101 +23,104 @@ The output was:
 
 Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
 
-The CXX compiler identification is GNU, found in "/root/Brzydal/CMakeFiles/CompilerIdCXX/a.out"
+The CXX compiler identification is GNU, found in "/home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/2.8.12.2/CompilerIdCXX/a.out"
 
 Determining if the C compiler works passed with the following output:
-Change Dir: /root/Brzydal/CMakeFiles/CMakeTmp
+Change Dir: /home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
-make[1]: Entering directory `/root/Brzydal/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /root/Brzydal/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o
-/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o   -c /root/Brzydal/CMakeFiles/CMakeTmp/testCCompiler.c
-Linking C executable cmTryCompileExec
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
-/usr/bin/gcc         CMakeFiles/cmTryCompileExec.dir/testCCompiler.c.o  -o cmTryCompileExec -rdynamic 
-make[1]: Leaving directory `/root/Brzydal/CMakeFiles/CMakeTmp'
+Run Build Command:/usr/bin/make "cmTryCompileExec371151151/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec371151151.dir/build.make CMakeFiles/cmTryCompileExec371151151.dir/build
+make[1]: Wejście do katalogu `/home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec371151151.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec371151151.dir/testCCompiler.c.o   -c /home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp/testCCompiler.c
+Linking C executable cmTryCompileExec371151151
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec371151151.dir/link.txt --verbose=1
+/usr/bin/cc       CMakeFiles/cmTryCompileExec371151151.dir/testCCompiler.c.o  -o cmTryCompileExec371151151 -rdynamic 
+make[1]: Opuszczenie katalogu `/home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp'
 
 
 Detecting C compiler ABI info compiled with the following output:
-Change Dir: /root/Brzydal/CMakeFiles/CMakeTmp
+Change Dir: /home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
-make[1]: Entering directory `/root/Brzydal/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /root/Brzydal/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building C object CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o
-/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
-Linking C executable cmTryCompileExec
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
-/usr/bin/gcc       -v CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec -rdynamic  
+Run Build Command:/usr/bin/make "cmTryCompileExec3367938418/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3367938418.dir/build.make CMakeFiles/cmTryCompileExec3367938418.dir/build
+make[1]: Wejście do katalogu `/home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building C object CMakeFiles/cmTryCompileExec3367938418.dir/CMakeCCompilerABI.c.o
+/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3367938418.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c
+Linking C executable cmTryCompileExec3367938418
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3367938418.dir/link.txt --verbose=1
+/usr/bin/cc     -v CMakeFiles/cmTryCompileExec3367938418.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3367938418 -rdynamic  
 Using built-in specs.
-COLLECT_GCC=/usr/bin/gcc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/4.6/lto-wrapper
-Target: arm-linux-gnueabihf
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.6.3-1ubuntu5' --with-bugurl=file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.6 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --enable-multilib --disable-sjlj-exceptions --with-arch=armv7-a --with-float=hard --with-fpu=vfpv3-d16 --with-mode=thumb --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+COLLECT_GCC=/usr/bin/cc
+COLLECT_LTO_WRAPPER=/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: /home/ext73/Pobrane/gcc-5-20160126/./configure --prefix=/opt/gcc-5.3.1/ --enable-lto --enable-tls --with-plugin-ld=/opt/binutils-2.26/bin/ld --disable-nls --enable-languages=c,c++ --disable-multilib --disable-bootstrap --disable-libstdcxx-pch --enable-threads=posix --enable-__cxa_atexit --enable-gnu-indirect-function --disable-libunwind-exceptions --enable-clocale=gnu --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --disable-isl-version-check --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --disable-werror --disable-libcc1 --enable-checking=release --with-pkgversion=eXt73-build_v11.3
 Thread model: posix
-gcc version 4.6.3 (Ubuntu/Linaro 4.6.3-1ubuntu5) 
-COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/
-LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../../lib/:/lib/arm-linux-gnueabihf/:/lib/../lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/../lib/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec' '-rdynamic' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb'
- /usr/lib/gcc/arm-linux-gnueabihf/4.6/collect2 --sysroot=/ --build-id --no-add-needed --as-needed --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -z relro -o cmTryCompileExec /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/4.6 -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../.. CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crtn.o
-make[1]: Leaving directory `/root/Brzydal/CMakeFiles/CMakeTmp'
+gcc version 5.3.1 20160126 (eXt73-build_v11.3) 
+COMPILER_PATH=/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/:/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/:/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/:/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/:/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/
+LIBRARY_PATH=/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/:/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3367938418' '-rdynamic' '-mtune=generic' '-march=x86-64'
+ /opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/collect2 -plugin /opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/liblto_plugin.so -plugin-opt=/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccaZLH17.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec3367938418 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/crtbegin.o -L/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1 -L/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../.. CMakeFiles/cmTryCompileExec3367938418.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
+make[1]: Opuszczenie katalogu `/home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp'
 
 
 Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /root/Brzydal/CMakeFiles/CMakeTmp]
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build]
-  ignore line: [make[1]: Entering directory `/root/Brzydal/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/cmake -E cmake_progress_report /root/Brzydal/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building C object CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/gcc    -o CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
-  ignore line: [Linking C executable cmTryCompileExec]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/gcc       -v CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec -rdynamic  ]
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3367938418/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3367938418.dir/build.make CMakeFiles/cmTryCompileExec3367938418.dir/build]
+  ignore line: [make[1]: Wejście do katalogu `/home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building C object CMakeFiles/cmTryCompileExec3367938418.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/usr/bin/cc    -o CMakeFiles/cmTryCompileExec3367938418.dir/CMakeCCompilerABI.c.o   -c /usr/share/cmake-2.8/Modules/CMakeCCompilerABI.c]
+  ignore line: [Linking C executable cmTryCompileExec3367938418]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3367938418.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/cc     -v CMakeFiles/cmTryCompileExec3367938418.dir/CMakeCCompilerABI.c.o  -o cmTryCompileExec3367938418 -rdynamic  ]
   ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/gcc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/4.6/lto-wrapper]
-  ignore line: [Target: arm-linux-gnueabihf]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.6.3-1ubuntu5' --with-bugurl=file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.6 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --enable-multilib --disable-sjlj-exceptions --with-arch=armv7-a --with-float=hard --with-fpu=vfpv3-d16 --with-mode=thumb --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf]
+  ignore line: [COLLECT_GCC=/usr/bin/cc]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/lto-wrapper]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: /home/ext73/Pobrane/gcc-5-20160126/./configure --prefix=/opt/gcc-5.3.1/ --enable-lto --enable-tls --with-plugin-ld=/opt/binutils-2.26/bin/ld --disable-nls --enable-languages=c,c++ --disable-multilib --disable-bootstrap --disable-libstdcxx-pch --enable-threads=posix --enable-__cxa_atexit --enable-gnu-indirect-function --disable-libunwind-exceptions --enable-clocale=gnu --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --disable-isl-version-check --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --disable-werror --disable-libcc1 --enable-checking=release --with-pkgversion=eXt73-build_v11.3]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.6.3 (Ubuntu/Linaro 4.6.3-1ubuntu5) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../../lib/:/lib/arm-linux-gnueabihf/:/lib/../lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/../lib/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec' '-rdynamic' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb']
-  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/4.6/collect2 --sysroot=/ --build-id --no-add-needed --as-needed --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -z relro -o cmTryCompileExec /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/4.6 -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../.. CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crtn.o]
-    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/collect2] ==> ignore
-    arg [--sysroot=/] ==> ignore
+  ignore line: [gcc version 5.3.1 20160126 (eXt73-build_v11.3) ]
+  ignore line: [COMPILER_PATH=/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/:/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/:/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/:/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/:/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/:/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3367938418' '-rdynamic' '-mtune=generic' '-march=x86-64']
+  link line: [ /opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/collect2 -plugin /opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/liblto_plugin.so -plugin-opt=/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccaZLH17.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec3367938418 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/crtbegin.o -L/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1 -L/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../.. CMakeFiles/cmTryCompileExec3367938418.dir/CMakeCCompilerABI.c.o -lgcc --as-needed -lgcc_s --no-as-needed -lc -lgcc --as-needed -lgcc_s --no-as-needed /opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o]
+    arg [/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccaZLH17.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
     arg [--build-id] ==> ignore
-    arg [--no-add-needed] ==> ignore
-    arg [--as-needed] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
-    arg [-export-dynamic] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib/ld-linux-armhf.so.3] ==> ignore
-    arg [-X] ==> ignore
     arg [--hash-style=gnu] ==> ignore
     arg [-m] ==> ignore
-    arg [armelf_linux_eabi] ==> ignore
-    arg [-zrelro] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec] ==> ignore
-    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crt1.o] ==> ignore
-    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crti.o] ==> ignore
-    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6]
-    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf]
-    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../../lib] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../../lib]
-    arg [-L/lib/arm-linux-gnueabihf] ==> dir [/lib/arm-linux-gnueabihf]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/lib/arm-linux-gnueabihf]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../..] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../..]
-    arg [CMakeFiles/cmTryCompileExec.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [cmTryCompileExec3367938418] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/crtbegin.o] ==> ignore
+    arg [-L/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1] ==> dir [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1]
+    arg [-L/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../../../lib64] ==> dir [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../../../lib64]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../..] ==> dir [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../..]
+    arg [CMakeFiles/cmTryCompileExec3367938418.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -127,117 +130,120 @@ Parsed C implicit link information from above output:
     arg [--as-needed] ==> ignore
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [--no-as-needed] ==> ignore
-    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/crtend.o] ==> ignore
-    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crtn.o] ==> ignore
+    arg [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/crtend.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crtn.o] ==> ignore
   remove lib [gcc]
   remove lib [gcc_s]
   remove lib [gcc]
   remove lib [gcc_s]
-  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6] ==> [/usr/lib/gcc/arm-linux-gnueabihf/4.6]
-  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
-  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../../lib] ==> [/usr/lib]
-  collapse dir [/lib/arm-linux-gnueabihf] ==> [/lib/arm-linux-gnueabihf]
-  collapse dir [/lib/../lib] ==> [/lib]
-  collapse dir [/usr/lib/arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
-  collapse dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../..] ==> [/usr/lib]
+  collapse library dir [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1] ==> [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1]
+  collapse library dir [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../../../lib64] ==> [/opt/gcc-5.3.1/lib64]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../..] ==> [/opt/gcc-5.3.1/lib]
   implicit libs: [c]
-  implicit dirs: [/usr/lib/gcc/arm-linux-gnueabihf/4.6;/usr/lib/arm-linux-gnueabihf;/usr/lib;/lib/arm-linux-gnueabihf;/lib]
+  implicit dirs: [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1;/opt/gcc-5.3.1/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/opt/gcc-5.3.1/lib]
+  implicit fwks: []
 
 
 Determining if the CXX compiler works passed with the following output:
-Change Dir: /root/Brzydal/CMakeFiles/CMakeTmp
+Change Dir: /home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
-make[1]: Entering directory `/root/Brzydal/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /root/Brzydal/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o -c /root/Brzydal/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
-Linking CXX executable cmTryCompileExec
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
-/usr/bin/c++          CMakeFiles/cmTryCompileExec.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec -rdynamic 
-make[1]: Leaving directory `/root/Brzydal/CMakeFiles/CMakeTmp'
+Run Build Command:/usr/bin/make "cmTryCompileExec3708253197/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3708253197.dir/build.make CMakeFiles/cmTryCompileExec3708253197.dir/build
+make[1]: Wejście do katalogu `/home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3708253197.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3708253197.dir/testCXXCompiler.cxx.o -c /home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp/testCXXCompiler.cxx
+Linking CXX executable cmTryCompileExec3708253197
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3708253197.dir/link.txt --verbose=1
+/usr/bin/c++        CMakeFiles/cmTryCompileExec3708253197.dir/testCXXCompiler.cxx.o  -o cmTryCompileExec3708253197 -rdynamic 
+make[1]: Opuszczenie katalogu `/home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp'
 
 
 Detecting CXX compiler ABI info compiled with the following output:
-Change Dir: /root/Brzydal/CMakeFiles/CMakeTmp
+Change Dir: /home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp
 
-Run Build Command:/usr/bin/make "cmTryCompileExec/fast"
-/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build
-make[1]: Entering directory `/root/Brzydal/CMakeFiles/CMakeTmp'
-/usr/bin/cmake -E cmake_progress_report /root/Brzydal/CMakeFiles/CMakeTmp/CMakeFiles 1
-Building CXX object CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
-Linking CXX executable cmTryCompileExec
-/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1
-/usr/bin/c++        -v CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec -rdynamic  
+Run Build Command:/usr/bin/make "cmTryCompileExec3396695010/fast"
+/usr/bin/make -f CMakeFiles/cmTryCompileExec3396695010.dir/build.make CMakeFiles/cmTryCompileExec3396695010.dir/build
+make[1]: Wejście do katalogu `/home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp'
+/usr/bin/cmake -E cmake_progress_report /home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp/CMakeFiles 1
+Building CXX object CMakeFiles/cmTryCompileExec3396695010.dir/CMakeCXXCompilerABI.cpp.o
+/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3396695010.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp
+Linking CXX executable cmTryCompileExec3396695010
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3396695010.dir/link.txt --verbose=1
+/usr/bin/c++      -v CMakeFiles/cmTryCompileExec3396695010.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3396695010 -rdynamic  
 Using built-in specs.
 COLLECT_GCC=/usr/bin/c++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/4.6/lto-wrapper
-Target: arm-linux-gnueabihf
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.6.3-1ubuntu5' --with-bugurl=file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.6 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --enable-multilib --disable-sjlj-exceptions --with-arch=armv7-a --with-float=hard --with-fpu=vfpv3-d16 --with-mode=thumb --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf
+COLLECT_LTO_WRAPPER=/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/lto-wrapper
+Target: x86_64-unknown-linux-gnu
+Configured with: /home/ext73/Pobrane/gcc-5-20160126/./configure --prefix=/opt/gcc-5.3.1/ --enable-lto --enable-tls --with-plugin-ld=/opt/binutils-2.26/bin/ld --disable-nls --enable-languages=c,c++ --disable-multilib --disable-bootstrap --disable-libstdcxx-pch --enable-threads=posix --enable-__cxa_atexit --enable-gnu-indirect-function --disable-libunwind-exceptions --enable-clocale=gnu --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --disable-isl-version-check --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --disable-werror --disable-libcc1 --enable-checking=release --with-pkgversion=eXt73-build_v11.3
 Thread model: posix
-gcc version 4.6.3 (Ubuntu/Linaro 4.6.3-1ubuntu5) 
-COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/
-LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../../lib/:/lib/arm-linux-gnueabihf/:/lib/../lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/../lib/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec' '-rdynamic' '-shared-libgcc' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb'
- /usr/lib/gcc/arm-linux-gnueabihf/4.6/collect2 --sysroot=/ --build-id --no-add-needed --as-needed --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -z relro -o cmTryCompileExec /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/4.6 -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../.. CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crtn.o
-make[1]: Leaving directory `/root/Brzydal/CMakeFiles/CMakeTmp'
+gcc version 5.3.1 20160126 (eXt73-build_v11.3) 
+COMPILER_PATH=/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/:/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/:/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/:/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/:/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/
+LIBRARY_PATH=/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/:/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../../:/lib/:/usr/lib/
+COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3396695010' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+ /opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/collect2 -plugin /opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/liblto_plugin.so -plugin-opt=/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccy5D17d.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec3396695010 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/crtbegin.o -L/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1 -L/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../.. CMakeFiles/cmTryCompileExec3396695010.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o
+make[1]: Opuszczenie katalogu `/home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp'
 
 
 Parsed CXX implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|ld|collect2)[^/\]*( |$)]
-  ignore line: [Change Dir: /root/Brzydal/CMakeFiles/CMakeTmp]
+  link line regex: [^( *|.*[/\])(ld|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  ignore line: [Change Dir: /home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec/fast"]
-  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec.dir/build.make CMakeFiles/cmTryCompileExec.dir/build]
-  ignore line: [make[1]: Entering directory `/root/Brzydal/CMakeFiles/CMakeTmp']
-  ignore line: [/usr/bin/cmake -E cmake_progress_report /root/Brzydal/CMakeFiles/CMakeTmp/CMakeFiles 1]
-  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Linking CXX executable cmTryCompileExec]
-  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++        -v CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec -rdynamic  ]
+  ignore line: [Run Build Command:/usr/bin/make "cmTryCompileExec3396695010/fast"]
+  ignore line: [/usr/bin/make -f CMakeFiles/cmTryCompileExec3396695010.dir/build.make CMakeFiles/cmTryCompileExec3396695010.dir/build]
+  ignore line: [make[1]: Wejście do katalogu `/home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp']
+  ignore line: [/usr/bin/cmake -E cmake_progress_report /home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/CMakeTmp/CMakeFiles 1]
+  ignore line: [Building CXX object CMakeFiles/cmTryCompileExec3396695010.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/usr/bin/c++     -o CMakeFiles/cmTryCompileExec3396695010.dir/CMakeCXXCompilerABI.cpp.o -c /usr/share/cmake-2.8/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Linking CXX executable cmTryCompileExec3396695010]
+  ignore line: [/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTryCompileExec3396695010.dir/link.txt --verbose=1]
+  ignore line: [/usr/bin/c++      -v CMakeFiles/cmTryCompileExec3396695010.dir/CMakeCXXCompilerABI.cpp.o  -o cmTryCompileExec3396695010 -rdynamic  ]
   ignore line: [Using built-in specs.]
   ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/arm-linux-gnueabihf/4.6/lto-wrapper]
-  ignore line: [Target: arm-linux-gnueabihf]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu/Linaro 4.6.3-1ubuntu5' --with-bugurl=file:///usr/share/doc/gcc-4.6/README.Bugs --enable-languages=c,c++,fortran,objc,obj-c++ --prefix=/usr --program-suffix=-4.6 --enable-shared --enable-linker-build-id --with-system-zlib --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --with-gxx-include-dir=/usr/include/c++/4.6 --libdir=/usr/lib --enable-nls --with-sysroot=/ --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --enable-gnu-unique-object --enable-plugin --enable-objc-gc --enable-multilib --disable-sjlj-exceptions --with-arch=armv7-a --with-float=hard --with-fpu=vfpv3-d16 --with-mode=thumb --disable-werror --enable-checking=release --build=arm-linux-gnueabihf --host=arm-linux-gnueabihf --target=arm-linux-gnueabihf]
+  ignore line: [COLLECT_LTO_WRAPPER=/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/lto-wrapper]
+  ignore line: [Target: x86_64-unknown-linux-gnu]
+  ignore line: [Configured with: /home/ext73/Pobrane/gcc-5-20160126/./configure --prefix=/opt/gcc-5.3.1/ --enable-lto --enable-tls --with-plugin-ld=/opt/binutils-2.26/bin/ld --disable-nls --enable-languages=c,c++ --disable-multilib --disable-bootstrap --disable-libstdcxx-pch --enable-threads=posix --enable-__cxa_atexit --enable-gnu-indirect-function --disable-libunwind-exceptions --enable-clocale=gnu --disable-libssp --enable-gnu-unique-object --enable-linker-build-id --enable-cloog-backend=isl --disable-isl-version-check --enable-plugin --enable-install-libiberty --with-linker-hash-style=gnu --disable-werror --disable-libcc1 --enable-checking=release --with-pkgversion=eXt73-build_v11.3]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 4.6.3 (Ubuntu/Linaro 4.6.3-1ubuntu5) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/arm-linux-gnueabihf/4.6/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../../lib/:/lib/arm-linux-gnueabihf/:/lib/../lib/:/usr/lib/arm-linux-gnueabihf/:/usr/lib/../lib/:/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec' '-rdynamic' '-shared-libgcc' '-march=armv7-a' '-mfloat-abi=hard' '-mfpu=vfpv3-d16' '-mthumb']
-  link line: [ /usr/lib/gcc/arm-linux-gnueabihf/4.6/collect2 --sysroot=/ --build-id --no-add-needed --as-needed --eh-frame-hdr -export-dynamic -dynamic-linker /lib/ld-linux-armhf.so.3 -X --hash-style=gnu -m armelf_linux_eabi -z relro -o cmTryCompileExec /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crt1.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crti.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtbegin.o -L/usr/lib/gcc/arm-linux-gnueabihf/4.6 -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../../lib -L/lib/arm-linux-gnueabihf -L/lib/../lib -L/usr/lib/arm-linux-gnueabihf -L/usr/lib/../lib -L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../.. CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/arm-linux-gnueabihf/4.6/crtend.o /usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crtn.o]
-    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/collect2] ==> ignore
-    arg [--sysroot=/] ==> ignore
+  ignore line: [gcc version 5.3.1 20160126 (eXt73-build_v11.3) ]
+  ignore line: [COMPILER_PATH=/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/:/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/:/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/:/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/:/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/]
+  ignore line: [LIBRARY_PATH=/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/:/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../../../lib64/:/lib/x86_64-linux-gnu/:/lib/../lib64/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib64/:/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../../:/lib/:/usr/lib/]
+  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTryCompileExec3396695010' '-rdynamic' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
+  link line: [ /opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/collect2 -plugin /opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/liblto_plugin.so -plugin-opt=/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/lto-wrapper -plugin-opt=-fresolution=/tmp/ccy5D17d.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr --hash-style=gnu -m elf_x86_64 -export-dynamic -dynamic-linker /lib64/ld-linux-x86-64.so.2 -o cmTryCompileExec3396695010 /usr/lib/x86_64-linux-gnu/crt1.o /usr/lib/x86_64-linux-gnu/crti.o /opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/crtbegin.o -L/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1 -L/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../../../lib64 -L/lib/x86_64-linux-gnu -L/lib/../lib64 -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib64 -L/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../.. CMakeFiles/cmTryCompileExec3396695010.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/crtend.o /usr/lib/x86_64-linux-gnu/crtn.o]
+    arg [/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/collect2] ==> ignore
+    arg [-plugin] ==> ignore
+    arg [/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/liblto_plugin.so] ==> ignore
+    arg [-plugin-opt=/opt/gcc-5.3.1/libexec/gcc/x86_64-unknown-linux-gnu/5.3.1/lto-wrapper] ==> ignore
+    arg [-plugin-opt=-fresolution=/tmp/ccy5D17d.res] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lc] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
+    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
     arg [--build-id] ==> ignore
-    arg [--no-add-needed] ==> ignore
-    arg [--as-needed] ==> ignore
     arg [--eh-frame-hdr] ==> ignore
-    arg [-export-dynamic] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib/ld-linux-armhf.so.3] ==> ignore
-    arg [-X] ==> ignore
     arg [--hash-style=gnu] ==> ignore
     arg [-m] ==> ignore
-    arg [armelf_linux_eabi] ==> ignore
-    arg [-zrelro] ==> ignore
+    arg [elf_x86_64] ==> ignore
+    arg [-export-dynamic] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTryCompileExec] ==> ignore
-    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crt1.o] ==> ignore
-    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crti.o] ==> ignore
-    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/crtbegin.o] ==> ignore
-    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6]
-    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf]
-    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../../lib] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../../lib]
-    arg [-L/lib/arm-linux-gnueabihf] ==> dir [/lib/arm-linux-gnueabihf]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/arm-linux-gnueabihf] ==> dir [/usr/lib/arm-linux-gnueabihf]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../..] ==> dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../..]
-    arg [CMakeFiles/cmTryCompileExec.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [cmTryCompileExec3396695010] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crt1.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crti.o] ==> ignore
+    arg [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/crtbegin.o] ==> ignore
+    arg [-L/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1] ==> dir [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1]
+    arg [-L/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../../../lib64] ==> dir [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../../../lib64]
+    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
+    arg [-L/lib/../lib64] ==> dir [/lib/../lib64]
+    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
+    arg [-L/usr/lib/../lib64] ==> dir [/usr/lib/../lib64]
+    arg [-L/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../..] ==> dir [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../..]
+    arg [CMakeFiles/cmTryCompileExec3396695010.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
     arg [-lstdc++] ==> lib [stdc++]
     arg [-lm] ==> lib [m]
     arg [-lgcc_s] ==> lib [gcc_s]
@@ -245,21 +251,21 @@ Parsed CXX implicit link information from above output:
     arg [-lc] ==> lib [c]
     arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/crtend.o] ==> ignore
-    arg [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf/crtn.o] ==> ignore
+    arg [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/crtend.o] ==> ignore
+    arg [/usr/lib/x86_64-linux-gnu/crtn.o] ==> ignore
   remove lib [gcc_s]
   remove lib [gcc]
   remove lib [gcc_s]
   remove lib [gcc]
-  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6] ==> [/usr/lib/gcc/arm-linux-gnueabihf/4.6]
-  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
-  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../../../lib] ==> [/usr/lib]
-  collapse dir [/lib/arm-linux-gnueabihf] ==> [/lib/arm-linux-gnueabihf]
-  collapse dir [/lib/../lib] ==> [/lib]
-  collapse dir [/usr/lib/arm-linux-gnueabihf] ==> [/usr/lib/arm-linux-gnueabihf]
-  collapse dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse dir [/usr/lib/gcc/arm-linux-gnueabihf/4.6/../../..] ==> [/usr/lib]
+  collapse library dir [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1] ==> [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1]
+  collapse library dir [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../../../lib64] ==> [/opt/gcc-5.3.1/lib64]
+  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
+  collapse library dir [/lib/../lib64] ==> [/lib64]
+  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
+  collapse library dir [/usr/lib/../lib64] ==> [/usr/lib64]
+  collapse library dir [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1/../../..] ==> [/opt/gcc-5.3.1/lib]
   implicit libs: [stdc++;m;c]
-  implicit dirs: [/usr/lib/gcc/arm-linux-gnueabihf/4.6;/usr/lib/arm-linux-gnueabihf;/usr/lib;/lib/arm-linux-gnueabihf;/lib]
+  implicit dirs: [/opt/gcc-5.3.1/lib/gcc/x86_64-unknown-linux-gnu/5.3.1;/opt/gcc-5.3.1/lib64;/lib/x86_64-linux-gnu;/lib64;/usr/lib/x86_64-linux-gnu;/usr/lib64;/opt/gcc-5.3.1/lib]
+  implicit fwks: []
 
 

@@ -1,1 +1,1 @@
-/root/Brzydal/CMakeFiles/Brzydal.dir
+/home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/Brzydal.dir

@@ -35,11 +35,14 @@ CMAKE_COMMAND = /usr/bin/cmake
 # The command to remove a file.
 RM = /usr/bin/cmake -E remove -f
 
+# Escaping for special characters.
+EQUALS = =
+
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /root/Brzydal
+CMAKE_SOURCE_DIR = /home/jakub/Pulpit/Brzydal/Brzydal
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /root/Brzydal
+CMAKE_BINARY_DIR = /home/jakub/Pulpit/Brzydal/Brzydal
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -66,9 +69,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/Brzydal/CMakeFiles /root/Brzydal/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles /home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /root/Brzydal/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/jakub/Pulpit/Brzydal/Brzydal/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
