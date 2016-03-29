@@ -10,6 +10,15 @@
 using namespace cv;
 using namespace std;
 
+// neutralne 0-9, pozytywne 10-19, negatywne 20-29
+enum Emotions {
+    neutral = 0,
+    smile = 10,
+    happy = 11,
+    sad = 20,
+    angry = 21
+    };
+
 class Face{
     public:    
         Face();
@@ -19,6 +28,8 @@ class Face{
         
         virtual void move_eye(int left, int right);
         virtual void blink(int left, int right);
+        
+        virtual void express_emotion(Emotions emotion); // animacja wywołująca daną emocję
         
         virtual void speak(string text);
         

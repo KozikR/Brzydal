@@ -38,3 +38,7 @@ void Face::blink(int left, int right){
 void Face::speak(string text){
     
 }
+
+void Face::express_emotion(Emotions emotion){
+    
+}
