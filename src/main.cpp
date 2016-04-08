@@ -77,10 +77,10 @@ int main(int argc, char** argv){
         case 6:{    //michal
             AndroidFace michal;
             michal.display();
-            srand( time( NULL ) ); // RAND_MAX = 2147483647
+            srand( time( NULL ) ); // RAND_MAX = 2147483647 -> aby max = 1000 uzyj int(rand()/2147483.647)
             
             for (int i = 1; i<100;i++){
-            cout<<int(rand()/2147483.647)<<endl;
+            //cout<<int(rand()/2147483.647)<<endl; //Debug
             waitKey(2000+ 2*int(rand()/2147483.647)); // co 3+-1s
             michal.blink();
             }
