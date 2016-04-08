@@ -3,6 +3,7 @@
 #include <face.h>
 #include <simpleFace.h>
 #include <imageFace.h>
+#include <humanoidFace.h>
 #include <androidFace.h>
 #include <unistd.h>
 #include <halFace.h>
@@ -20,14 +21,26 @@ int map(char * string){
         return 4;
     if (string[0]=='5')     // hal static
         return 5;
-    if (string[0] = 'a' )   //michal
+    if (string[0] == 'a' )   //michal
         return 6;                    
+    if (string[0] == 'h' )   //humanoid - upgrade buzki
+        return 7;            
     return 0;    
 }
 
 
 int main(int argc, char** argv){
-    switch(map(argv[1])){
+
+    int mapowanie;
+    // jeśli wywołasz bez parametru
+    if (!argv[1]){ 
+        mapowanie = 2;
+    }
+    else{
+        mapowanie = map(argv[1]);
+    }
+        
+    switch(mapowanie){
         case 1:{    //buzka
             SimpleFace face;
             for(int i=0; i<10; i++){
@@ -85,7 +98,18 @@ int main(int argc, char** argv){
             michal.blink();
             }
             break; 
-        }                            
+        }             
+        case 7:{    //humanoid
+            HumanoidFace human;
+            human.display();
+            waitKey(500);
+            human.animate(100,20,50,20);  //smile
+            waitKey(500);
+            human.animate(100,20,30,-30);  //zaskoczenie
+            waitKey(500);
+            human.animate(100,20,0,0);  //hmm
+            break;
+            }           
         default:{
             ImageFace face2;
             face2.display();    
