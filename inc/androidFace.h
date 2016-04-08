@@ -7,6 +7,7 @@
 class AndroidFace : public Face{
 public:
     AndroidFace();
+    void blink(int freq = 1);
 };
 
 #endif

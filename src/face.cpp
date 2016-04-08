@@ -31,7 +31,7 @@ void Face::move_eye(int left, int right){
     
 }
 
-void Face::blink(int left, int right){
+void Face::blink(int freq){
     
 }
 

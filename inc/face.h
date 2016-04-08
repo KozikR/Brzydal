@@ -27,7 +27,7 @@ class Face{
         virtual void display();
         
         virtual void move_eye(int left, int right);
-        virtual void blink(int left, int right);
+        virtual void blink(int freq);
         
         virtual void express_emotion(Emotions emotion); // animacja wywołująca daną emocję
         
