@@ -2,6 +2,7 @@
 
 HalFace::HalFace()
 {
+    rectangle( image, Point( 0, 0 ), Point( 800, 480), Scalar( 0, 0, 0), -1, 4 );
     A = 255;
     R = 200;
     r = 12;
@@ -11,10 +12,17 @@ HalFace::HalFace()
     phi = 0;	
     w = 8*3.14/(3*R);
 
-    //draw(0);
+    x_0 = 240;
+    y_0 = 400;
+    R_max = 200;
+    iter = 70;
+    max_alfa = 3.14/2*5; //pi/2 *(2k+1)
+
+    draw(0);
 }
 
-void HalFace::draw(float p){
+void HalFace::draw(float offset){
+    /*
     phi = p;
     for(int row = 0; row < image_ROI.rows; ++row){
         uchar* p = image_ROI.ptr(row);
@@ -30,6 +38,15 @@ void HalFace::draw(float p){
                 *p = A*exp(-r_temp/a)*pow(cos(w*r_temp+phi), 2);
 	    p++;
         }
+    }
+    */
+    
+    float scale = iter*iter/255;
+    float offset_rad = 3.14*offset/180;
+    
+    for (int i = 0; i<iter;i++){
+        circle(image, Point(y_0,x_0), R_max-i*R_max/iter, Scalar(0,0,(i*i)/scale*cos(max_alfa - max_alfa*i/iter+offset_rad)*cos(max_alfa - max_alfa*i/iter+offset_rad)), -1,4); //255,0,0 -> 0,0,0
+        //cout<<(i*i)/scale*cos(max_alfa - max_alfa*i/iter)*cos(max_alfa - max_alfa*i/iter)<<endl;
     }
 }
 

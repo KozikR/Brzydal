@@ -73,13 +73,14 @@ int main(int argc, char** argv){
         }      
         case 4:{    //hal moving
             HalFace halFace;
-            for(int phi = 0; phi < 720; phi++){
-                float p = -10*phi*3.14/360;
-                halFace.draw(p);	
+            halFace.display();
+            waitKey(500);
+            for(int phi = 0; phi < 120; phi++){
+                halFace.draw(3*phi);	
                 halFace.display();
                 waitKey(50);
             }     
-            break;    
+            break;
         }    
         case 5:{    //hal static
             HalFace halFace;

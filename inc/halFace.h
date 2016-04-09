@@ -18,6 +18,13 @@ protected:
     float x0;
     float y0;
 	
+    int x_0;
+    int y_0;
+    int R_max;
+    int iter;
+    float max_alfa; //pi/2 *(2k+1)	
+	
+	
     float w;
     float phi;
 };
