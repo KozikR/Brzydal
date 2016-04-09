@@ -17,7 +17,7 @@ void AndroidFace::blink(int freq)
     Mat last_image;
     image_ROI.copyTo(last_image);
     
-    for(int i = 1; i<=13; i++){
+    for(int i = 0; i<=12; i++){
         sprintf((char*)numer.c_str(), "%2d", i);
         path = "img/android/mr"+numer+".PNG";
         load_image = imread(path);
