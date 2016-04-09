@@ -1,13 +1,11 @@
 #ifndef SERVO_H
 #define SERVO_H
 
-enum Servos{
-	bottom=0,
-	top=1
-};
-
 class Servo{
 public:
+    const static int bottom = 1;
+    const static int top = 0;
+    
     Servo();
     /*
      * Init comunication with servo

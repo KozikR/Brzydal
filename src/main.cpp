@@ -7,6 +7,7 @@
 #include <androidFace.h>
 #include <unistd.h>
 #include <halFace.h>
+#include <servo.h>
 
 //#define RAND_MAX (1000) //+-0.5 sekundy
 
@@ -30,9 +31,10 @@ int map(char * string){
 
 
 int main(int argc, char** argv){
+    Servo servo;	
 
     int mapowanie;
-    // jeśli wywołasz bez parametru
+    // if run without parameter
     if (!argv[1]){ 
         mapowanie = 2;
     }
@@ -103,12 +105,17 @@ int main(int argc, char** argv){
         case 7:{    //humanoid
             HumanoidFace human;
             human.display();
-            waitKey(500);
-            human.animate(100,20,50,20);  //smile
-            waitKey(500);
-            human.animate(100,20,30,-30);  //zaskoczenie
-            waitKey(500);
-            human.animate(100,20,0,0);  //hmm
+            for(int i=0; i<5; i++){
+	    	servo.set_position(servo.bottom, 100);
+            	waitKey(500);
+            	human.animate(30,20,50,20);  //smile
+	    	servo.set_position(servo.bottom, 150);
+            	waitKey(500);
+            	human.animate(30,20,30,-30);  //zaskoczenie
+	    	servo.set_position(servo.bottom, 50);
+            	waitKey(500);
+            	human.animate(30,20,0,0);  //hmm
+	    }
             break;
             }           
         default:{
