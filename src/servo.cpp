@@ -1,4 +1,4 @@
-#include "servo.h"
+#include "../inc/servo.h"
 
 #include <stdio.h>
 #include <unistd.h>
@@ -11,7 +11,7 @@
 
 #include <string.h>
 
-servo::servo(){
+Servo::Servo(){
     this->fdw = open("/dev/xillybus_write_8", O_WRONLY);
     
     // TODO throw exception
@@ -21,9 +21,9 @@ servo::servo(){
     }
     
     // Initial position
-    this->position[0] = 0;
-    this->position[1] = 0;
-    this->position[2] = 0;
+    this->position[0] = 150;
+    this->position[1] = 150;
+    this->position[2] = 150;
     
     // calibration
     a = 1.;
@@ -32,21 +32,21 @@ servo::servo(){
     this->send_data();
 }
 
-void servo::set_position(unsigned char number, unsigned char position){
+void Servo::set_position(unsigned char number, unsigned char position){
     this->position[number] = position;
     this->send_data();
 }
 
-void servo::set_angle(unsigned char number, float angle){
+void Servo::set_angle(unsigned char number, float angle){
     this->position[number] = this->a*angle+this->b+0.5;
     this->send_data();
 }
 
-servo::~servo(){
+Servo::~Servo(){
     close(this->fdw);
 }
 
-void servo::send_data(){
+void Servo::send_data(){
     write(fdw, (void *) this->position, 3);
 }
 

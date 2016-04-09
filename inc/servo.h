@@ -1,9 +1,14 @@
 #ifndef SERVO_H
 #define SERVO_H
 
-class servo{
+enum Servos{
+	bottom=0,
+	top=1
+};
+
+class Servo{
 public:
-    servo();
+    Servo();
     /*
      * Init comunication with servo
      */
@@ -18,7 +23,7 @@ public:
      * Set servo position in agles
      */
      
-    ~servo();
+    ~Servo();
     /*
      * Close connections
      */
