@@ -177,7 +177,7 @@ int main(int argc, char** argv){
                 form.displayImage((string)("img/woman/smile 3.png"),2000+ 2*int(rand()/2147483.647));
                 for(int i = 0; i<=4; i++){
                     sprintf((char*)number.c_str(), "%2d", i);
-                    path = "img/man/blink_smile"+number+".png";
+                    path = "img/woman/blink_smile"+number+".png";
                     form.displayImage(path,50);
                     }
                 }                               
