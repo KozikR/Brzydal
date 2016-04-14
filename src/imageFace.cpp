@@ -1,4 +1,5 @@
 #include "imageFace.h"
+#include <string>
 
 ImageFace::ImageFace()
 {    
@@ -18,3 +19,11 @@ ImageFace::ImageFace(int type)
    load_image.copyTo(image_ROI);
 }
 
+void ImageFace::displayImage(string path, int time)
+{
+   Mat load_image;
+   load_image = imread(path);
+   load_image.copyTo(image_ROI);
+   display();
+   waitKey(time);
+}

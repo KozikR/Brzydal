@@ -7,6 +7,7 @@ class ImageFace : public Face{
 public:
     ImageFace();
     ImageFace(int type);
+    void displayImage(string path, int time = 1);
 };
 
 #endif

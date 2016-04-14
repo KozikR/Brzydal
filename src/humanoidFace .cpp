@@ -7,10 +7,10 @@ HumanoidFace::HumanoidFace()
 {    
     rectangle( image, Point( 0, 0 ), Point( 800, 480), Scalar( 153, 255, 255), -1, 4 );
     eye_radius = 18;
-    eye_l_x = 5;
-    eye_l_y = -10;
-    eye_r_x = 5;
-    eye_r_y = -10;   
+    eye_l_x = -2;
+    eye_l_y = 2;
+    eye_r_x = -2;
+    eye_r_y = 2;   
     draw_eye();
     
     
@@ -39,7 +39,7 @@ HumanoidFace::HumanoidFace()
 
 }
 
-void HumanoidFace:: animate(int iterations, int time, float top, float bottom){
+void HumanoidFace:: animate(int iterations, int time, float top, float bottom, float eye_x, float eye_y){
 // iterations - ile klatek
 // time - czas w ms
 // top - pozycja zewnętrznej wargi
@@ -50,9 +50,18 @@ void HumanoidFace:: animate(int iterations, int time, float top, float bottom){
     float b = (bottom-mouth_y_b);
     float mnt = t/iterations;
     float mnb = b/iterations;
+    float x = (eye_x-eye_l_x); //ile należy się przesunąć
+    float y = (eye_y-eye_l_y);
+    float mnx = x/iterations;
+    float mny = y/iterations;
     for (int i = 0; i<iterations;i++){
         mouth_y_b += mnb; 
         mouth_y_t += mnt;
+        eye_l_x += mnx;
+        eye_l_y += mny;
+        eye_r_x += mnx;
+        eye_r_y += mny;   
+        draw_eye();        
         draw_mouth();
         display();
         waitKey(time); 

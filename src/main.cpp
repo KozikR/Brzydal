@@ -6,6 +6,8 @@
 #include <mechanoidFace.h>
 #include <humanoidFace.h>
 #include <androidFace.h>
+#include <manFace.h>
+#include <womanFace.h>
 #include <unistd.h>
 #include <halFace.h>
 
@@ -28,6 +30,8 @@ int map(char * string){
         return 7; 
     if (string[0] == 'm' )   //mechanoid - pilka
         return 8;                    
+    if (string[0] == 'q' )   //ankieta
+        return 9;              
     return 0;    
 }
 
@@ -107,11 +111,11 @@ int main(int argc, char** argv){
             HumanoidFace human;
             human.display();
             waitKey(500);
-            human.animate(100,20,50,20);  //smile
+            human.animate(100,20,50,20,-5,10);  //smile
             waitKey(500);
-            human.animate(100,20,30,-30);  //zaskoczenie
+            human.animate(100,20,30,-30,-5,10);  //zaskoczenie
             waitKey(500);
-            human.animate(100,20,0,0);  //hmm
+            human.animate(100,20,0,0,-5,10);  //hmm
             break;
             }  
         case 8:{    //mechanoid
@@ -119,6 +123,97 @@ int main(int argc, char** argv){
             mech.display();
             break;
             }                       
+        case 9:{    
+            /** ankieta
+            1. android man
+            2. android woman
+            3. humanoid
+            4. mechanoid
+            5. animal-like structure
+            
+            neutral - 5 sek (+blink - optional)
+            smile - animation + 5 sek (blink optional)
+            sum ~ 15 s
+            
+            **/
+            int wait_number = 3000;
+                       
+            ImageFace form; // form face class
+            string path = "img/man/normal.png";
+            string number= "10";  
+            srand( time( NULL ) ); // RAND_MAX = 2147483647 -> aby max = 1000 uzyj int(rand()/2147483.647)
+            
+            // man face  
+            form.displayImage((string)("img/1.png"),wait_number);          
+            //normal blink x3
+            for (int j = 0;j<3;j++){
+                form.displayImage((string)("img/man/normal.png"),2000+ 2*int(rand()/2147483.647));
+                for(int i = 0; i<=8; i++){
+                    sprintf((char*)number.c_str(), "%2d", i);
+                    path = "img/man/blink_normal"+number+".png";
+                    form.displayImage(path,50);
+                    }
+                }
+            waitKey(2000);
+            //smile
+            for(int i = 0; i<=3; i++){
+                sprintf((char*)number.c_str(), "%2d", i);
+                path = "img/man/smile"+number+".png";
+                form.displayImage(path,50);
+                }                
+            waitKey(10000);
+ 
+            //woman face 
+            form.displayImage((string)("img/2.png"),wait_number);
+            //normal
+            form.displayImage((string)("img/woman/normal.png"),6000);
+            //smile  blink x3
+            for(int i = 0; i<=3; i++){
+                sprintf((char*)number.c_str(), "%2d", i);
+                path = "img/woman/smile"+number+".png";
+                form.displayImage(path,50);
+                } 
+            for (int j = 0;j<3;j++){
+                form.displayImage((string)("img/woman/smile 3.png"),2000+ 2*int(rand()/2147483.647));
+                for(int i = 0; i<=4; i++){
+                    sprintf((char*)number.c_str(), "%2d", i);
+                    path = "img/man/blink_smile"+number+".png";
+                    form.displayImage(path,50);
+                    }
+                }                               
+            waitKey(5000);
+            
+            //humanoid
+            form.displayImage((string)("img/3.png"),wait_number);
+            HumanoidFace human;
+            human.display();
+            waitKey(5000);
+            human.animate(30,10,0,0,0,-10);  //sad
+            waitKey(5000);
+            human.animate(100,20,50,20,0,2);  //smile
+            waitKey(10000);
+            
+            // mechanoid
+            form.displayImage((string)("img/4.png"),wait_number);
+            HalFace halFace;
+            halFace.display();
+            waitKey(3000);
+            for(int phi = 0; phi < 120; phi++){
+                halFace.draw(3*phi);	
+                halFace.display();
+                waitKey(50);
+            }     
+            for(int phi = 0; phi < 120; phi++){
+                halFace.draw(-3*phi);	
+                halFace.display();
+                waitKey(50);
+            }     
+            waitKey(3000);            
+            break;
+            //form.displayImage((string)("img/5.png"),wait_number);     
+            // ???
+            break;
+            }             
         default:{
             ImageFace face2;
             face2.display();    
