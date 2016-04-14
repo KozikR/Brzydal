@@ -3,6 +3,7 @@
 #include <face.h>
 #include <simpleFace.h>
 #include <imageFace.h>
+#include <mechanoidFace.h>
 #include <humanoidFace.h>
 #include <androidFace.h>
 #include <unistd.h>
@@ -24,7 +25,9 @@ int map(char * string){
     if (string[0] == 'a' )   //michal
         return 6;                    
     if (string[0] == 'h' )   //humanoid - upgrade buzki
-        return 7;            
+        return 7; 
+    if (string[0] == 'm' )   //mechanoid - pilka
+        return 8;                    
     return 0;    
 }
 
@@ -110,7 +113,12 @@ int main(int argc, char** argv){
             waitKey(500);
             human.animate(100,20,0,0);  //hmm
             break;
-            }           
+            }  
+        case 8:{    //mechanoid
+            MechanoidFace mech;
+            mech.display();
+            break;
+            }                       
         default:{
             ImageFace face2;
             face2.display();    
