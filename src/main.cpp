@@ -161,12 +161,12 @@ int main(int argc, char** argv){
                 path = "img/man/smile"+number+".png";
                 form.displayImage(path,50);
                 }                
-            waitKey(10000);
+            waitKey(3000);
  
             //woman face 
             form.displayImage((string)("img/2.png"),wait_number);
             //normal
-            form.displayImage((string)("img/woman/normal.png"),6000);
+            form.displayImage((string)("img/woman/normal.png"),3000);
             //smile  blink x3
             for(int i = 0; i<=3; i++){
                 sprintf((char*)number.c_str(), "%2d", i);
@@ -181,17 +181,17 @@ int main(int argc, char** argv){
                     form.displayImage(path,50);
                     }
                 }                               
-            waitKey(5000);
+            waitKey(2000);
             
             //humanoid
             form.displayImage((string)("img/3.png"),wait_number);
             HumanoidFace human;
             human.display();
-            waitKey(5000);
+            waitKey(3000);
             human.animate(30,10,0,0,0,-10);  //sad
-            waitKey(5000);
+            waitKey(3000);
             human.animate(100,20,50,20,0,2);  //smile
-            waitKey(10000);
+            waitKey(4000);
             
             // mechanoid
             form.displayImage((string)("img/4.png"),wait_number);

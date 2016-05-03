@@ -24,7 +24,7 @@ int main(int argc, char *argv[]) {
   // Not checking return values of write() and read(). This must be done
   // in a real-life program to ensure reliability.
   
-  unsigned char data_w[] = {50, 150, 170};
+  unsigned char data_w[] = {200, 200, 200};
   unsigned char data_r[30];
 	sscanf(argv[1], "%d", data_w);
 	sscanf(argv[2], "%d", &data_w[1]);
