@@ -11,7 +11,7 @@
 
 #include <string.h>
 
-servo::servo(){
+servo::servo(){    
     this->fdw = open("/dev/xillybus_write_8", O_WRONLY);
     
     // TODO throw exception
@@ -32,8 +32,9 @@ servo::servo(){
     this->send_data();
 }
 
-void servo::set_position(unsigned char number, unsigned char position){
-    this->position[number] = position;
+void servo::set_position(unsigned char vertical, unsigned char horizontal){
+    this->position[0] = vertical;
+    this->position[1] = horizontal;
     this->send_data();
 }
 

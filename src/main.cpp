@@ -10,6 +10,7 @@
 #include <womanFace.h>
 #include <unistd.h>
 #include <halFace.h>
+#include "servo.h"
 
 //#define RAND_MAX (1000) //+-0.5 sekundy
 
@@ -31,7 +32,9 @@ int map(char * string){
     if (string[0] == 'm' )   //mechanoid - pilka
         return 8;                    
     if (string[0] == 'q' )   //ankieta
-        return 9;              
+        return 9; 
+    if (string[0] == 'b' )
+        return 10;
     return 0;    
 }
 
@@ -213,7 +216,30 @@ int main(int argc, char** argv){
             //form.displayImage((string)("img/5.png"),wait_number);     
             // ???
             break;
-            }             
+            } 
+        case 10:
+            ImageFace form;
+            servo s;
+            
+            int horizontal = 150;
+            int vertical = 150;
+            int direction = 1;
+            int timer = 0;
+    
+            for (int j=0; j<10; j++){
+                form.displayImage((string)("img/woman/smile 3.png"),2000+ 2*int(rand()/2147483.647));
+                for(int i = 0; i<=4; i++){
+                    sprintf((char*)number.c_str(), "%2d", i);
+                    path = "img/woman/blink_smile"+number+".png";
+
+                    horizontal += direction;
+                    if(horizontal > 160 || horizontal < 140)    direction *= -1;
+                    s.set_position(vertical, horizontal);
+                }
+            } 
+            s.~servo();     
+        break;
+        
         default:{
             ImageFace face2;
             face2.display();    

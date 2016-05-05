@@ -3,6 +3,9 @@
 
 class servo{
 public:
+    static int horizontal = 1;
+    static int vertical = 0;
+    
     servo();
     /*
      * Init comunication with servo
