@@ -6,18 +6,10 @@
 #include <opencv2/imgproc/imgproc.hpp>
 #include <opencv2/highgui/highgui.hpp>
 #include <iostream>
+#include "servo.h"
 
 using namespace cv;
 using namespace std;
-
-// neutralne 0-9, pozytywne 10-19, negatywne 20-29
-enum Emotions {
-    neutral = 0,
-    smile = 10,
-    happy = 11,
-    sad = 20,
-    angry = 21
-    };
 
 class Face{
     public:    
@@ -27,22 +19,28 @@ class Face{
         virtual void display();
         
         virtual void move_eye(int left, int right);
-        virtual void blink(int freq);
-        
-        virtual void express_emotion(Emotions emotion); // animacja wywołująca daną emocję
-        
-        virtual void speak(string text);
-        
+        virtual void blink();
+        virtual void smile();
+        virtual void be_sad();
+              
+        virtual void speak(string text);        
+        virtual void move_head(unsigned char horizontal, unsigned char vertical);
+        virtual void move_yes();
+        virtual void move_no();
+
         static const int width;
         static const int height;  
         static const int width_display;
         static const int height_display;
              
     protected:
+        Servo servo;
         Mat image;
         Mat image_ROI;  // Region of interest
-        static const string windowName;
-            
+        static const string windowName;       
+
+private:
+	static const int move_time = 20;
 };
 
 #endif

@@ -1,13 +1,13 @@
 #ifndef MANFACE_H
 #define MANFACE_H
 
-#include "face.h"
+#include "imageFace.h"
 
-// twarz androida - zdjecia
-class ManFace : public Face{
+class ManFace : public ImageFace{
 public:
     ManFace();
-    void blink(int freq = 1);
+    void blink();
+    void smile();
 };
 
 #endif

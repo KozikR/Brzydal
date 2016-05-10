@@ -1,13 +1,13 @@
 #ifndef WOMANFACE_H
 #define WOMANFACE_H
 
-#include "face.h"
+#include "imageFace.h"
 
-// twarz zdjecia
-class WomanFace : public Face{
+class WomanFace : public ImageFace{
 public:
     WomanFace();
-    void blink(int freq = 1);
+    void blink();
+    void smile();
 };
 
 #endif

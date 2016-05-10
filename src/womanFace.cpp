@@ -1,32 +1,15 @@
 #include "womanFace.h"
-
 #include <iostream>
 
 WomanFace::WomanFace()
 {    
-    Mat load_image = imread("img/woman/normal.jpg");
-    load_image.copyTo(image_ROI);
+	displayImage("img/woman/normal.png", 1000);
 }
 
-void WomanFace::blink(int freq)
-{    
-    // funkcja trwa 300ms (23*13+obliczenia)
-    string path;
-    string numer= "10";
-    Mat load_image;
-    Mat last_image;
-    image_ROI.copyTo(last_image);
-    
-    for(int i = 1; i<=13; i++){
-        sprintf((char*)numer.c_str(), "%2d", i);
-        path = "img/android/mr"+numer+".PNG";
-        load_image = imread(path);
-        load_image.copyTo(image_ROI);
-        display();
-        waitKey(23);
-    }
-    
-    // return to last image
-    last_image.copyTo(image_ROI);
-    display();
+void WomanFace::blink(){
+    displayAnimation("img/woman/blink_smile", 5);
+}
+
+void WomanFace::smile(){
+    displayAnimation("img/woman/smile", 4);
 }

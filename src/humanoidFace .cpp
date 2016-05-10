@@ -4,136 +4,135 @@
 #include <opencv2/highgui/highgui.hpp>
 
 HumanoidFace::HumanoidFace()
+:
+eye_radius(18), eye_left_x(-2), eye_left_y(2), eye_right_x(-2), eye_right_y(2), mouth_y_top(20), mouth_y_bottom(-1), eye_size(90), mouth_height(600)
 {    
-    rectangle( image, Point( 0, 0 ), Point( 800, 480), Scalar( 153, 255, 255), -1, 4 );
-    eye_radius = 18;
-    eye_l_x = -2;
-    eye_l_y = 2;
-    eye_r_x = -2;
-    eye_r_y = 2;   
+    rectangle( image, Point( 0, 0 ), Point( 800, 480), Scalar( 153, 255, 255), -1, 4 ); 
+}
+
+void HumanoidFace::init(){
     draw_eye();
-    
-    
-    //neutral
-    mouth_y_t = 20;
-    mouth_y_b = -1;
-
-/*  
-    //smile
-    mouth_y_t = 50;
-    mouth_y_b = 30;
-    
-    //sad
-    mouth_y_t = -50;
-    mouth_y_b = -20;    
-    
-    //wonder
-    mouth_y_t = 30;
-    mouth_y_b = -30;     
-
-    //nope
-    mouth_y_t = 0;
-    mouth_y_b = 0; 
-*/    
     draw_mouth();
+    display();
+}
+
+void HumanoidFace::blink(){
 
 }
 
-void HumanoidFace:: animate(int iterations, int time, float top, float bottom, float eye_x, float eye_y){
-// iterations - ile klatek
-// time - czas w ms
-// top - pozycja zewnętrznej wargi
-// bottom - pozycja wewnętrznej
-// funkcja trwa iterations*time ms 
+void HumanoidFace::smile(){
+	animate(100,20,50,20,0,2);
+}
 
-    float t = (top-mouth_y_t); //ile należy się przesunąć
-    float b = (bottom-mouth_y_b);
-    float mnt = t/iterations;
-    float mnb = b/iterations;
-    float x = (eye_x-eye_l_x); //ile należy się przesunąć
-    float y = (eye_y-eye_l_y);
-    float mnx = x/iterations;
-    float mny = y/iterations;
-    for (int i = 0; i<iterations;i++){
-        mouth_y_b += mnb; 
-        mouth_y_t += mnt;
-        eye_l_x += mnx;
-        eye_l_y += mny;
-        eye_r_x += mnx;
-        eye_r_y += mny;   
-        draw_eye();        
+void HumanoidFace::be_sad(){
+	animate(30,10,0,0,0,-10);
+}
+
+void HumanoidFace::animate(int iterations, int time, float mouth_top, float mouth_bottom, float eye_x, float eye_y){
+	calculate_deltas(mouth_top, iterations, mouth_bottom, eye_x, eye_y);
+    for (int i = 0; i < iterations; i++){
+		calculate_new_position();
+        draw_eye();
         draw_mouth();
         display();
-        waitKey(time); 
-    }  
+        waitKey(time);
+    }
 }
 
-void HumanoidFace:: draw_eye(){
-
-    Point right = Point(275-eye_r_y, 125+eye_r_x);
-    Point left  = Point(275-eye_l_y, 355+eye_l_x);
-    int wielkosc_oka = 90;
-    float szarosc = (wielkosc_oka - eye_radius*3)*(wielkosc_oka - eye_radius*3)/30;
-    float niebieski = (eye_radius*eye_radius)/12.5;
-    int i_max = (wielkosc_oka - eye_radius*3);
-    
-    //bialka oczu
-    //circle(image, Point(275, 125), 50, Scalar(255,255,255), -1);
-    //circle(image, Point(275, 355), 50, Scalar(255,255,255), -1);
-    for (int i = 0; i<(wielkosc_oka - eye_radius*3);i++){
-        circle(image, Point(275, 355), wielkosc_oka-i, Scalar(255-(i-i_max)*(i-i_max)/szarosc,224-(i-i_max)*(i-i_max)/szarosc,224-(i-i_max)*(i-i_max)/szarosc), -1,4); //224,224,224 -> 255,255,255
-        circle(image, Point(275, 125), wielkosc_oka-i, Scalar(255-(i-i_max)*(i-i_max)/szarosc,224-(i-i_max)*(i-i_max)/szarosc,224-(i-i_max)*(i-i_max)/szarosc), -1,4); //BGR
-    }
-    
-    //ramka bialek oczu
-    circle(image, Point(275, 125), wielkosc_oka+1, Scalar(192,192,192), 2,8);
-    circle(image, Point(275, 355), wielkosc_oka+1, Scalar(192,192,192), 2,8);
-
-    i_max = eye_radius*2;
-    //teczowka
-    //circle(image, Point(275-eye_r_y, 125+eye_r_x), eye_radius*3, Scalar(255,153,51), -1); //51,153,255
-    //circle(image, Point(275-eye_l_y, 355+eye_l_x), eye_radius*3, Scalar(255,153,51), -1); //BGR   
-    for (int i = 0; i<2*eye_radius;i++){
-        circle(image, Point(275-eye_r_y, 125+eye_r_x), eye_radius*3-i, Scalar(255,178-(i-i_max)*(i-i_max)/niebieski/2,102-(i-i_max)*(i-i_max)/niebieski), -1,4); //255,153,51 -> 255,178,102
-        circle(image, Point(275-eye_l_y, 355+eye_l_x), eye_radius*3-i, Scalar(255,178-(i-i_max)*(i-i_max)/niebieski/2,102-(i-i_max)*(i-i_max)/niebieski), -1,4); //BGR
-    }
-    
-    // źrenica
-    circle(image, Point(275-3*eye_r_y, 125+3*eye_r_x), eye_radius, Scalar(0,0,0), -1,8);
-    circle(image, Point(275-3*eye_l_y, 355+3*eye_l_x), eye_radius, Scalar(0,0,0), -1,8);
+void HumanoidFace::draw_eye(){
+	draw_eye_white();
+	draw_eye_conture();
+	draw_eye_iris();
+	draw_eye_pupil();
 }
 
+void HumanoidFace::calculate_new_position() {
+	mouth_y_bottom += delta_mouth_bottom;
+	mouth_y_top += delta_mouth_top;
+	eye_left_x += delta_eye_x;
+	eye_left_y += delta_eye_y;
+	eye_right_x += delta_eye_x;
+	eye_right_y += delta_eye_y;
+}
 
+void HumanoidFace::calculate_deltas(float next_mouth_top, int iterations, float next_mouth_bottom, float next_eye_x, float next_eye_y) {
+	delta_mouth_top = (next_mouth_top - mouth_y_top) / iterations;
+	delta_mouth_bottom = (next_mouth_bottom - mouth_y_bottom) / iterations;
+	delta_eye_x = (next_eye_x - eye_left_x) / iterations;
+	delta_eye_y = (next_eye_y - eye_left_y) / iterations;
+}
 
-void HumanoidFace:: draw_mouth(){
-    int mouth_height = 600;
+void HumanoidFace::draw_eye_white() {
+	float gray = (eye_size - eye_radius*3)*(eye_size - eye_radius*3)/30;
+	int i_max = (eye_size - eye_radius * 3);
+	for (int i = 0; i < i_max; i++) {
+		Scalar eye_inside_color(255 - (i - i_max) * (i - i_max) / gray, 224 - (i - i_max) * (i - i_max) / gray, 224 - (i - i_max) * (i - i_max) / gray);
+		circle(image, Point(275, 355), eye_size - i, eye_inside_color, -1, 4);
+		circle(image, Point(275, 125), eye_size - i, eye_inside_color, -1, 4);
+	}
+}
 
-    //czyszczenie powierzchni
-    ellipse(image, Point(mouth_height,240), Size(110, 130), (180), 270, 90, Scalar(153, 255, 255), -1,4);
-    ellipse(image, Point(mouth_height,240), Size(110, 130), (0), 270, 90, Scalar(153, 255, 255), -1,4);
+void HumanoidFace::draw_eye_iris() {
+	Point eye_right = Point(275 - eye_right_y, 125 + eye_right_x);
+	Point eye_left = Point(275 - eye_left_y, 355 + eye_left_x);
+	float blue = (eye_radius * eye_radius) / 12.5;
+	int i_max = eye_radius * 2;
+	for (int i = 0; i < i_max; i++) {
+		Scalar color(255, 178 - (i - i_max) * (i - i_max) / blue / 2,
+				102 - (i - i_max) * (i - i_max) / blue);
+		circle(image, eye_right, eye_radius * 3 - i, color, -1, 4);
+		circle(image, eye_left, eye_radius * 3 - i, color, -1, 4);
+	}
+}
 
-    //wypełnienie
-    if((mouth_y_b>0)&&(mouth_y_t>0)){ //uśmiech
-        ellipse(image, Point(mouth_height,240), Size(((mouth_y_t>0)?2*mouth_y_t:(-2*mouth_y_t)), 120), ((mouth_y_t>0)?180:0), 270, 90, Scalar(0,0,255), -1,4); //t
-        ellipse(image, Point(mouth_height,240), Size(((mouth_y_b>0)?2*mouth_y_b:(-2*mouth_y_b)), 120), ((mouth_y_b>0)?180:0), 270, 90, Scalar(153, 255, 255), -1,4); //b
-        //ellipse(image, Point(mouth_height,240), Size(((-mouth_y_b>0)?2*-mouth_y_b:(2*mouth_y_b)), 120), ((-mouth_y_b>0)?180:0), 270, 90, Scalar(153, 255, 255), -1,4); //b        
-    }
+void HumanoidFace::draw_eye_conture() {
+	circle(image, Point(275, 125), eye_size + 1, Scalar(192, 192, 192), 2, 8);
+	circle(image, Point(275, 355), eye_size + 1, Scalar(192, 192, 192), 2, 8);
+}
+
+void HumanoidFace::draw_eye_pupil() {
+	circle(image, Point(275 - 3 * eye_right_y, 125 + 3 * eye_right_x),
+			eye_radius, Scalar(0, 0, 0), -1, 8);
+	circle(image, Point(275 - 3 * eye_left_y, 355 + 3 * eye_left_x), eye_radius,
+			Scalar(0, 0, 0), -1, 8);
+}
+
+void HumanoidFace::draw_mouth(){
+	clear_old_mouth();
+
+    Size top_size = Size(((mouth_y_top>0)?2*mouth_y_top:(-2*mouth_y_top)), 120);
+    Size bottom_size = Size(((mouth_y_bottom>0)?2*mouth_y_bottom:(-2*mouth_y_bottom)), 120);
+    int angle_top = (mouth_y_top > 0) ? 180 : 0;
+    int angle_bottom = (mouth_y_bottom > 0) ? 180 : 0;
+    Scalar colorTop;
+    Scalar colorBottom;
+
+    if(is_face_happy() || is_face_sad())
+    	colorBottom = Scalar(153, 255, 255);
+    else
+    	colorBottom = Scalar(0, 0, 255);
+    colorTop = Scalar(0, 0, 255);
+
+	ellipse(image, Point(mouth_height, 240), top_size, angle_top, 270, 90, colorTop, -1, 4);
+	ellipse(image, Point(mouth_height, 240), bottom_size, angle_bottom, 270, 90, colorBottom, -1, 4);
     
-    if((mouth_y_b<0)&&(mouth_y_t>0)){ //obie
-        ellipse(image, Point(mouth_height,240), Size(((mouth_y_t>0)?2*mouth_y_t:(-2*mouth_y_t)), 120), ((mouth_y_t>0)?180:0), 270, 90, Scalar(0,0,255), -1,4); //t
-        ellipse(image, Point(mouth_height,240), Size(((mouth_y_b>0)?2*mouth_y_b:(-2*mouth_y_b)), 120), ((mouth_y_b>0)?180:0), 270, 90, Scalar(0, 0, 255), -1,4); //b 
-    }   
-    
-    if((mouth_y_b<0)&&(mouth_y_t<0)){ //smutek
-        ellipse(image, Point(mouth_height,240), Size(((mouth_y_t>0)?2*mouth_y_t:(-2*mouth_y_t)), 120), ((mouth_y_t>0)?180:0), 270, 90, Scalar(0,0,255), -1,4); //t
-        ellipse(image, Point(mouth_height,240), Size(((mouth_y_b>0)?2*mouth_y_b:(-2*mouth_y_b)), 120), ((mouth_y_b>0)?180:0), 270, 90, Scalar(153, 255, 255), -1,4); //b
-        //ellipse(image, Point(mouth_height,240), Size(((-mouth_y_b>0)?-2*mouth_y_b:(2*mouth_y_b)), 120), ((-mouth_y_b>0)?180:0), 270, 90, Scalar(153, 255, 255), -1,4); //b        
-    }
-    
-    //krawedzie
-    ellipse(image, Point(mouth_height,240), Size(((mouth_y_t>0)?2*mouth_y_t:(-2*mouth_y_t)), 120), ((mouth_y_t>0)?180:0), 270, 90, Scalar(0,0,0), 2,4); //górna warga
-    //ellipse(image, Point(mouth_height,240), Size((((mouth_y_t+mouth_y_b)>0)?2*(mouth_y_t+mouth_y_b):(-2*(mouth_y_t+mouth_y_b))), 120), ((mouth_y_t+mouth_y_b>0)?180:0), 280, 100, Scalar(0,0,0), 1,4); //środek
-    ellipse(image, Point(mouth_height,240), Size(((mouth_y_b>0)?2*mouth_y_b:(-2*mouth_y_b)), 120), ((mouth_y_b>0)?180:0), 270, 90, Scalar(0,0,0), 2,4); //dolna warga
-    
+    //border
+    ellipse(image, Point(mouth_height,240), top_size, angle_top, 270, 90, Scalar(0,0,0), 2,4);
+    ellipse(image, Point(mouth_height,240), bottom_size, angle_bottom, 270, 90, Scalar(0,0,0), 2,4);
+}
+
+void HumanoidFace::clear_old_mouth() {
+	ellipse(image, Point(mouth_height, 240), Size(110, 130), (180), 270, 90,
+			Scalar(153, 255, 255), -1, 4);
+	ellipse(image, Point(mouth_height, 240), Size(110, 130), (0), 270, 90,
+			Scalar(153, 255, 255), -1, 4);
+}
+
+bool HumanoidFace::is_face_happy() {
+	return (mouth_y_bottom > 0) && (mouth_y_top > 0);
+}
+
+bool HumanoidFace::is_face_sad() {
+	return (mouth_y_bottom < 0) && (mouth_y_top < 0);
 }
 

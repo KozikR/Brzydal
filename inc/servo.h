@@ -1,31 +1,18 @@
 #ifndef SERVO_H
 #define SERVO_H
 
-class servo{
+class Servo{
 public:
-    static int horizontal = 1;
-    static int vertical = 0;
+    const static int horizontal = 1;
+    const static int vertical = 0;
+    const static unsigned char neutral_position = 150;
     
-    servo();
-    /*
-     * Init comunication with servo
-     */
+    Servo();
+    ~Servo();
      
     void set_position(unsigned char number, unsigned char position);
-    /*
-     * Set servo position
-     */
-    
-    void set_angle(unsigned char number, float angle);
-    /*
-     * Set servo position in agles
-     */
-     
-    ~servo();
-    /*
-     * Close connections
-     */
-     
+    void move_horizontali(signed char delta);
+    void move_verticaly(signed char delta);
      
 private:
     int fdw;
