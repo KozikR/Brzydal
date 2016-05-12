@@ -8,7 +8,6 @@ HumanoidFace::HumanoidFace()
 eye_radius(18), eye_left_x(-2), eye_left_y(2), eye_right_x(-2), eye_right_y(2), mouth_y_top(20), mouth_y_bottom(-1), eye_size(90), mouth_height(600)
 {    
     rectangle( image, Point( 0, 0 ), Point( 800, 480), Scalar( 153, 255, 255), -1, 4 ); 
-    init();
 }
 
 void HumanoidFace::init(){
@@ -18,7 +17,7 @@ void HumanoidFace::init(){
 }
 
 void HumanoidFace::blink(){
-	waitKey(1000);
+
 }
 
 void HumanoidFace::smile(){

@@ -22,7 +22,6 @@ void HalFace::draw(float offset){
         int red = (i*i)/scale*cos(max_alfa - max_alfa*i/iter+offset_rad)*cos(max_alfa - max_alfa*i/iter+offset_rad);
         circle(image, Point(y_0,x_0), radius, Scalar(0,0,red), -1,4);
     }
-
 }
 
 void HalFace::blink(){

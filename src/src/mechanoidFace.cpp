@@ -25,6 +25,6 @@ MechanoidFace::MechanoidFace()
     }
     
     pic.copyTo(image_ROI);
-    display();
+    
 }
 

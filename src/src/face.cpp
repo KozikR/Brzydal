@@ -42,8 +42,7 @@ void Face::be_sad(){
 }
 
 void Face::speak(string text){
-	string command = "espeak -v en \"" + text + "\" --stdout|paplay &";
-	std::cout << command;
+	string command = "espeak & -v en i\"" + text + "\" --stdout|paplay";
     system(command.c_str());
 }
 
